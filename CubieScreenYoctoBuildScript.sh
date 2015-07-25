@@ -41,7 +41,7 @@ select opt in "${options[@]}" "Quit"; do
 
     1 ) echo "You choosed to build the $opt branch"; break ;;
     2 ) echo "You choosed to build the $opt branch"; break ;;
-    $(( ${#options[@]}+1 )) ) echo "Goodbye!"; break;;
+    $(( ${#options[@]}+1 )) ) echo "Goodbye!"; exit 0;;
     *) echo "Invalid option. Try another one.";continue;;
 
     esac
